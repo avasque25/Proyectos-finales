@@ -14,6 +14,7 @@ def texto_a_conjunto(texto):
         return None
 
 # Operaciones con manejo de contingencias
+# Unión
 def union():
     A = texto_a_conjunto(entry_A.get())
     B = texto_a_conjunto(entry_B.get())
@@ -27,6 +28,7 @@ def union():
             else:
                 resultado.set(f"Unión (A ∪ B): {sorted(union_AB)}")
 
+# 
 def interseccion():
     A = texto_a_conjunto(entry_A.get())
     B = texto_a_conjunto(entry_B.get())

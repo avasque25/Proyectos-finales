@@ -71,10 +71,10 @@ def boton_regresar():
 
 ventana = tk.Tk()
 ventana.title("Calculadora de Combinaciones y Permutaciones")
+ventana.state('zoomed')
 ventana.geometry("540x400")
-ventana.minsize(540, 400)
-ventana.maxsize(540, 400)  # Evita deformaciones
-ventana.resizable(False, False)
+
+ventana.resizable(True, True)
 
 style = ttk.Style()
 style.theme_use("clam")

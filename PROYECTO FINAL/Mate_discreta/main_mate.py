@@ -6,7 +6,7 @@ import tkinter.font as tkfont
 # --- Funciones de los botones ---
 def Recorrido_arboles():
     ventana.destroy()
-    subprocess.run(['python', 'Mate_discreta/recorridos_arbol.py'])
+    subprocess.run(['python', 'Mate_discreta/MCD.py'])
 
 def Comb_per():
     ventana.destroy()
@@ -72,7 +72,7 @@ def crear_boton(master, text, command):
 
 
 # --- Botones principales ---
-btn1 = crear_boton(ventana, "Recorrido de arboles", Recorrido_arboles)
+btn1 = crear_boton(ventana, "Maximo Comun Divisor", Recorrido_arboles)
 btn1.grid(row=2, column=0, columnspan=5, pady=15)
 
 btn2 = crear_boton(ventana, "Combinaciones y permutaciones", Comb_per)
